@@ -1,17 +1,34 @@
 # p5_template
 
-![Example Output](image1.png)
+![Example Output](image1)
 
 ## Overview
 
-**p5_template** is a starter template for projects built with [p5.js](https://p5js.org/). This template is designed for rapid prototyping and creative coding, making it easy to start new visual projects with helpful features out of the box.
+**p5_template** is a powerful starter template for [p5.js](https://p5js.org/) projects, designed for rapid prototyping and creative coding with a layer-based workflow.
 
 ## Features
 
-- **Reference Images:** Easily incorporate reference images by placing them in the `assets` folder.
-- **Guide Grids:** Display grid overlays to help with alignment and composition.
-- **Axis Guides:** Show visual guides for the X and Y axes.
-- **Toggle Layers:** Show or hide the grid and axis layers using keyboard shortcuts for a customizable workspace.
+- **Layer-Based Drawing:** Organize your sketch into multiple layers, each managed by its own drawing function. Easily toggle visibility of layers.
+- **Reference Images:** Add reference images to the `assets` folder and display them as an overlay.
+- **Guide Grid & Axes:** Overlay a customizable grid and central axes to assist with alignment and composition.
+- **Tooltip:** Dynamic tooltip displays mouse coordinates.
+- **Keyboard Shortcuts:** Instantly show/hide features and layers with easy keyboard commands.
+
+## Keyboard Shortcuts
+
+| Key  | Action                          |
+|------|---------------------------------|
+| `r`  | Toggle reference image layer    |
+| `g`  | Toggle grid layer               |
+| `t`  | Toggle tooltip                  |
+| `d`  | Toggle drawing layer            |
+| `1`  | Set reference opacity to 50     |
+| `2`  | Set reference opacity to 100    |
+| `3`  | Set reference opacity to 150    |
+
+## Layer System
+
+Work in multiple layers: each layer is a function (e.g., `layer1`, `layer2`, ...) that you can implement to organize your drawing workflow. Toggle each layer’s visibility independently for maximum flexibility.
 
 ## Getting Started
 
@@ -20,22 +37,15 @@
    git clone https://github.com/PoulLorca/p5_template.git
    ```
 
-2. **Add your reference images** to the `assets` folder.
+2. **Add reference images** to the `assets` folder (default: `reference.png`).
 
-3. **Open `index.html`** in your browser to start your project.
-
-## Keyboard Shortcuts
-
-- **Show/Hide Grid:** Toggle the visibility of the grid overlay.
-- **Show/Hide Axes:** Toggle the visibility of the X and Y axis guides.
-
-*(See the code or documentation for the exact keyboard shortcuts.)*
+3. **Open `index.html`** in your browser and start coding in `sketch.js`.
 
 ## Example Output
 
-The following image demonstrates the template in action, featuring a reference image with grid and axis guides enabled:
+The image below shows a reference image, grid, axes, and tooltip in action:
 
-![Example Output](image1.png)
+![Example Output](image1)
 
 ## Folder Structure
 
@@ -50,8 +60,8 @@ p5_template/
 
 ## Customization
 
-- Add or remove reference images as needed.
-- Adjust grid or guide settings in the JavaScript code to fit your project requirements.
+- Add or edit drawing layers in `sketch.js` (e.g., `layer1`, `layer2`, ...).
+- Adjust grid size, colors, or shortcut keys as needed.
 
 ## License
 
