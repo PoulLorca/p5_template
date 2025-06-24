@@ -1,6 +1,6 @@
 # p5_template
 
-![Example Output](image1)
+![Example Output](image1.png)
 
 ## Overview
 
@@ -45,7 +45,7 @@ Work in multiple layers: each layer is a function (e.g., `layer1`, `layer2`, ...
 
 The image below shows a reference image, grid, axes, and tooltip in action:
 
-![Example Output](image1)
+![Example Output](image1.png)
 
 ## Folder Structure
 
